@@ -1,0 +1,37 @@
+.btn {
+    border: none;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adjust the values for the shadow */
+    transition: box-shadow 0.3s ease;
+    /* Adding a transition for smoothness */
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 50%);
+}
+
+.img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    margin-right: 20px;
+}
