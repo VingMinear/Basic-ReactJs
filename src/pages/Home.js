@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
     const [count, setCount] = useState(0);
@@ -6,7 +6,12 @@ const Home = () => {
     const onClick = () => {
         setCount(count + 1);
     };
-
+    useEffect(() => {
+        /*
+        Query logic
+        */
+        console.log('i fire once');
+    }, []);
     return (
         <div className="home">
             <h1>Home</h1>

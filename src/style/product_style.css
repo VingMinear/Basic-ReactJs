@@ -17,11 +17,12 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Adjust the values for the shadow */
     transition: box-shadow 0.3s ease;
-    /* Adding a transition for smoothness */
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
     cursor: pointer;
+    transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 50%);
 }
@@ -34,4 +35,35 @@
     border-radius: 10px;
     height: 50px;
     margin-right: 20px;
+}
+
+.loading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+
+}
+
+.loader {
+    width: 28px;
+    height: 28px;
+    border: 3px solid #d6d6d6;
+    border-bottom-color: #FACDCC;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

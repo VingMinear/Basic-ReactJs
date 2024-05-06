@@ -7,13 +7,17 @@ function App() {
   const likes = 100;
   const person = { name: "Nea", gender: "Male" }
   return (
+
     <div className="App">
       <Navbar />
       <div className="content">
-        {/* <Home /> */}
+
         <ProductPage />
+
       </div>
     </div>
+
+
   );
 }
 
